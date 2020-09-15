@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import 'emoji-mart/css/emoji-mart.css';
+import { Picker } from 'emoji-mart';
 
 export default class SearchBar extends Component {
   state = { term: '' };
@@ -15,6 +17,7 @@ export default class SearchBar extends Component {
   render() {
     return (
       <div className="search-bar ui segment">
+        <p>search</p>
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
             <label htmlFor="">
@@ -28,7 +31,12 @@ export default class SearchBar extends Component {
             </label>
           </div>
         </form>
-        <p>search</p>
+        <Picker
+          title="Pick your emoji…"
+          emoji="point_up"
+          onSelect={this.addEmoji}
+          // style={{ position: 'absolute', bottom: '20px', right: '20px' }}
+        />
       </div>
     );
   }
