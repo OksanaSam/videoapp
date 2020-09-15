@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export default class SearchBar extends Component {
-  state = { term: "" };
+  state = { term: '' };
 
   onInputChange = (e) => {
     this.setState({ term: e.target.value });
