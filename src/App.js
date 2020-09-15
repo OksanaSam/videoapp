@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar';
 import youtube from './Apis/youtube';
 import VideoList from './components/VideoList';
 import VideoDetail from './components/VideoDetail';
+// require('dotenv').config();
 
 class App extends Component {
   state = { videos: [] };
