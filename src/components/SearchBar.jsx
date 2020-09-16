@@ -31,12 +31,11 @@ export default class SearchBar extends Component {
             </label>
           </div>
         </form>
-        <Picker
+        {/* <Picker
           title="Pick your emoji…"
           emoji="point_up"
           onSelect={this.addEmoji}
-          // style={{ position: 'absolute', bottom: '20px', right: '20px' }}
-        />
+        /> */}
       </div>
     );
   }
