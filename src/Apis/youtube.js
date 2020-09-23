@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// const KEY = process.env.REACT_APP_API_KEY.slice(1, 40);
 const KEY = process.env.REACT_APP_API_KEY;
 
 export default axios.create({

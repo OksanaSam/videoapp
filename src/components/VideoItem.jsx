@@ -3,7 +3,7 @@ import './VideoItem.css';
 
 export default function VideoItem({ video, onVideoSelect }) {
   return (
-    <div onClick={() => onVideoSelect(video)} className="item video-item">
+    <div onClick={() => onVideoSelect(video)} className="video-item item">
       <img
         className="ui image"
         src={video.snippet.thumbnails.medium.url}
